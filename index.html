@@ -47,16 +47,16 @@
 <div class="max-w-[80%] mx-auto flex justify-between items-center py-4">
   <h1 class="text-2xl font-semibold text-[#002C5C] ">Available Jobs</h1>
   <div class="">
-    <h1 class="text-[16px] font-medium text-[#64748B]  items-center gap-1 flex "><span id="availavletotal" class="">0</span>jobs</h1>
+    <h1 class="text-[16px] font-medium text-[#64748B]  items-center gap-1 flex "><span id="availabletotal" class="">0</span>jobs</h1>
   </div>
 </div>
 
 
 <main class="max-w-[80%] mx-auto">
   <div class="my-5 flex gap-6">
-    <button id="all-btn" class="bg-[#3B82F6] text-white px-12 py-3 rounded-md text-[14px] font-semibold items-center cursor-pointer hover:bg-[#3c70c5]">All</button>
-    <button id="interview-filter" class="text-[#64748B] bg-white border-[2px] border-[#F1F2F4] px-12 py-3 rounded-md text-[14px] font-semibold items-center cursor-pointer hover:bg-slate-200">Interview</button>
-    <button id="rejected-filter" class="text-[#64748B] bg-white border-[2px] border-[#F1F2F4]  px-12 py-3 rounded-md text-[14px] font-semibold items-center cursor-pointer hover:bg-slate-200">Rejected</button>
+    <button onclick="toggleStyle('all-filter')" id="all-filter" class="bg-[#3B82F6] text-white px-12 py-3 rounded-md text-[14px] font-semibold items-center cursor-pointer hover:bg-[#3c70c5]">All</button>
+    <button onclick="toggleStyle('interview-filter')" id="interview-filter" class="text-[#64748B] bg-white border-[2px] border-[#F1F2F4] px-12 py-3 rounded-md text-[14px] font-semibold items-center cursor-pointer hover:bg-slate-200">Interview</button>
+    <button onclick="toggleStyle('rejected-filter')" id="rejected-filter" class="text-[#64748B] bg-white border-[2px] border-[#F1F2F4]  px-12 py-3 rounded-md text-[14px] font-semibold items-center cursor-pointer hover:bg-slate-200">Rejected</button>
   </div>
 
 
