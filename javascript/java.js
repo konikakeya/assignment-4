@@ -165,7 +165,7 @@ function renderInterview() {
   filterSection.innerHTML = ''
   if (interviewList.length===0) {
     filterSection.innerHTML = `
-    <div class="card max-w-[90%] mx-auto text-center grid justify-center items-center p-8 my-20 bg-white">
+    <div class="card  mx-auto text-center grid justify-center items-center p-22  bg-white">
         <figure class="grid justify-center">
             <img src="./jobs.png"/>
         </figure>
@@ -221,7 +221,7 @@ function renderRejected() {
   filterSection.innerHTML = ''
   if (rejectedList.length==0) {
     filterSection.innerHTML = `
-    <div class="card max-w-[90%] mx-auto text-center grid justify-center items-center p-8 my-20 bg-white">
+    <div class="card  mx-auto text-center grid justify-center items-center p-22  bg-white">
         <figure class="grid justify-center">
             <img src="./jobs.png"/>
         </figure>
