@@ -20,22 +20,22 @@
     }
   </style>
 </head>
-<body class="bg-[#F8FAFC] min-h-screen ">
+<body class="bg-[#F8FAFC] min-h-screen overflow-x-hidden">
   
 
 <header class="max-w-[80%] mx-auto">
   <h1 class="text-[#002C5C] text-[32px] font-bold  py-8 ">Job Application Tracker</h1>
   <div class="grid grid-cols-3 gap-8 mb-8">
     <div class="bg-white border border-[#F1F2F4] rounded-lg p-5 space-y-3 ">
-      <h3 class="text-[#323B49] text-xl font-semibold">Total</h3>
+      <h3 class="text-[#323B49] lg:text-xl font-semibold">Total</h3>
       <p id="total" class="text-[#002C5C] font-bold text-2xl">0</p>
     </div>
     <div class="bg-white border border-[#F1F2F4] rounded-lg p-5 space-y-3">
-      <h3 class="text-[#323B49] text-xl font-semibold">Interview</h3>
+      <h3 class="text-[#323B49] lg:text-xl font-semibold">Interview</h3>
       <p id="interview" class="font-bold text-2xl text-[#10B981]">0</p>
     </div>
     <div class="bg-white border border-[#F1F2F4] rounded-lg p-5 space-y-3">
-      <h3 class="text-[#323B49] text-xl font-semibold">Rejected</h3>
+      <h3 class="text-[#323B49] lg:text-xl font-semibold">Rejected</h3>
       <p id="rejected" class="font-bold text-2xl text-[#EF4444]">0</p>
     </div>
   </div>
@@ -54,9 +54,9 @@
 
 <main class="max-w-[80%] mx-auto">
   <div class="my-5 flex gap-6">
-    <button onclick="toggleStyle('all-filter')" id="all-filter" class="bg-[#3B82F6] text-white px-12 py-3 rounded-md text-[14px] font-semibold items-center cursor-pointer hover:bg-[#3c70c5]">All</button>
-    <button onclick="toggleStyle('interview-filter')" id="interview-filter" class="text-[#64748B] bg-white border-[2px] border-[#F1F2F4] px-12 py-3 rounded-md text-[14px] font-semibold items-center cursor-pointer hover:bg-slate-200">Interview</button>
-    <button onclick="toggleStyle('rejected-filter')" id="rejected-filter" class="text-[#64748B] bg-white border-[2px] border-[#F1F2F4]  px-12 py-3 rounded-md text-[14px] font-semibold items-center cursor-pointer hover:bg-slate-200">Rejected</button>
+    <button onclick="toggleStyle('all-filter')" id="all-filter" class="bg-[#3B82F6] text-white px-8 py-3 lg:px-12 lg:py-3  rounded-md text-[14px] font-semibold items-center cursor-pointer hover:bg-[#3c70c5]">All</button>
+    <button onclick="toggleStyle('interview-filter')" id="interview-filter" class="text-[#64748B] bg-white border-[2px] border-[#F1F2F4] px-5 py-3 lg:px-12 lg:py-3 rounded-md text-[14px] font-semibold items-center cursor-pointer hover:bg-slate-200">Interview</button>
+    <button onclick="toggleStyle('rejected-filter')" id="rejected-filter" class="text-[#64748B] bg-white border-[2px] border-[#F1F2F4]  px-5 py-3 lg:px-12 lg:py-3 rounded-md text-[14px] font-semibold items-center cursor-pointer hover:bg-slate-200">Rejected</button>
   </div>
 
 
