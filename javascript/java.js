@@ -59,7 +59,7 @@ function toggleStyle(btns) {
   else if (btns == 'all-filter') {
     allCardSection.classList.remove('hidden');
     filterSection.classList.add('hidden');
-
+    allJobsCount();
 
   }
   else if (btns == 'rejected-filter') {
@@ -163,7 +163,9 @@ else if (allJobs === 'interview-filter') {
 
 function renderInterview() {
   filterSection.innerHTML = ''
-  if (interviewList.length===0) {
+  if (interviewList.length === 0) {
+    
+    availableTotal.innerText = interviewCount.innerText
     filterSection.innerHTML = `
     <div class="card  mx-auto text-center grid justify-center items-center p-22  bg-white">
         <figure class="grid justify-center">
@@ -175,6 +177,9 @@ function renderInterview() {
         </div>
     </div>
     `
+  } else {
+    availableTotal.innerText = interviewCount.innerText
+    
   }
 
   for (let interview of interviewList) {
@@ -219,7 +224,8 @@ function renderInterview() {
 
 function renderRejected() {
   filterSection.innerHTML = ''
-  if (rejectedList.length==0) {
+  if (rejectedList.length == 0) {
+    availableTotal.innerText = rejectedCount.innerText
     filterSection.innerHTML = `
     <div class="card  mx-auto text-center grid justify-center items-center p-22  bg-white">
         <figure class="grid justify-center">
@@ -232,6 +238,9 @@ function renderRejected() {
     </div>
     
     `
+  } else {
+    availableTotal.innerText = rejectedCount.innerText
+    
   }
 
   for (let reject of rejectedList) {
